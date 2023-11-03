@@ -1,0 +1,158 @@
+body {
+    background: linear-gradient(90deg, #5392e4 1%, rgba(131, 177, 228, 0.23853291316526615) 49%, rgba(83, 146, 228, 1) 100%);
+    /* color: #fff; */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 28px;
+}
+
+.div_escolha {
+    color: #2104fe;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+h1,
+h2 {
+    /* animation: blinker 2.5s linear infinite; */
+    text-align: center;
+    font-size: 36px;
+    color: black;
+}
+
+img {
+    width: 300px;
+}
+
+p,
+label,
+input,
+li {
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+main, header, section, footer {
+    margin: 0 auto;
+    border: 1px solid #E6E6E6;
+    padding: 16px 20px;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #FFFFFF; */
+    /* color: #444444; */
+}
+
+.main_footer_div p{
+    text-align: center;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #333;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: #000
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 0.8;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+#p_resultado {
+    font-size: 15px;
+    color: darkred;
+}
+
+input {
+    border-radius: 6px;
+}
+
+hr {
+    height: 2px;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.intro {
+    text-align: justify;
+}
+
+@keyframes blinker {
+    50% {
+        color: rgb(1, 13, 140);
+    }
+}
+
+/* Se a janela do navegador for de 600px ou menor, diminui o tamanho das fontes! */
+@media only screen and (max-width: 600px) {
+
+    .button,
+    input,
+    p,
+    label,
+    tr,
+    th,
+    a,
+    li,
+    .header {
+        font-size: 14px;
+    }
+
+    #p_resultado {
+        font-size: 16px;
+    }
+
+    h1,
+    h2 {
+        font-size: 16px;
+    }
+}

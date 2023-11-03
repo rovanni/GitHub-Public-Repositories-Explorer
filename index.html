@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+###################################################################
+# NOME:	index.html
+# VERSÃO: 1.4
+# DESCRIÇÃO: Código criado para aula sobre api;
+Utilizado para consulta de Repositórios Públicos do GitHub
+# DATA DA CRIAÇÃO:	31/10/2023
+# ESCRITO POR: Luciano R. Nascimento
+# E-MAIL: rovanni@gmail.com 			
+# CÓDIGOS:	HTML, JAVASCRIPT, CSS
+# LICENÇA:			GPLv3 			
+###################################################################
+ -->
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Repositórios Públicos do GitHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/tabela.css">
+</head>
+
+<body>
+    <!-- Menu Responsive Topnav with Dropdown -->
+    <!-- Fonte: https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- Fim - Menu Responsive Topnav with Dropdown -->
+
+    <main>
+        <!-- Inicio - Página Consulta de Repositórios Públicos do GitHub -->
+        <h1>Consulta de Repositórios Públicos do GitHub via API</h1>
+
+        <!-- Formulário para inserir o nome de usuário(a) do GitHub -->
+        <form>
+            <label for="username">Digite o nome de usuário(a) do GitHub</label>
+            <input type="text" id="username">
+            <button type="button" class="button" id="botao" onclick="consultaRepositorios()">Consultar
+                Repositórios</button>
+            <!-- Um botão para acionar a consulta quando clicado -->
+        </form>
+
+        <!-- Divs onde os resultados serão exibidos -->
+        <div id="mostrar_user"></div>
+        <div id="mostrar_repos"></div>
+        <h4>Observações:</h4>
+        <p>Significado das legendas:</p>
+        <p>N/A = Não disponível.<a name="text1"></a></p>
+        <script src="./js/script.js"></script>
+        <script src="./js/menu.js"></script>
+        <!-- Fim - Página Consulta de Repositórios Públicos do GitHub -->
+    </main>
+
+    <footer class="main_footer container">
+        <div class="main_footer_div">
+            <p class="m-b-footer">Consulta de Repositórios Públicos do GitHub via API - 2023, todos os direitos
+                reservados.</p>
+            <p class="by"><i class="icon icon-heart-3"></i>Desenvolvido por: <a href="https://www.github.com/rovanni"
+                    title="Luciano Rovanni do Nascimento">Luciano Rovanni do Nascimento.</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
