@@ -1,3 +1,25 @@
+# Hello, I'm Luciano! 👋
+# About
+
+Hello, my name is Luciano Rovanni do Nascimento. I'm a web programming teacher. I believe that technology has the power to transform people's lives, which is why I'm dedicated to teaching technology to anyone who wants to learn.
+
+I've created this website project for my web development students to learn how to create a responsive and accessible page to access the GitHub API and explore public repositories of GitHub users.
+
+Responsive websites are those that adapt the layout and size of their pages to the screens they are being displayed on, such as mobile phones and tablets.
+
+With the help of this page, my students can learn to create a responsive and accessible web page that allows them to access the GitHub API and explore public repositories quickly and easily.
+
+## Demo
+
+Website demonstration:
+
+ - [GitHub API Explorer Site](https://rovanni.github.io/GitHub-Public-Repositories-Explorer/)
+
+## Author
+
+- [@rovanni](https://www.github.com/rovanni)
+
+# Versão em português: 
 # Olá, eu sou Luciano! 👋
 # Sobre
 
@@ -13,8 +35,10 @@ Com a ajuda desta página, meus alunos poderão aprender a criar uma página web
 
 Demonstração do site:
 
- - [Site de Exploração da API do GitHub](https://seu-link-para-o-site-de-exploracao-github-aqui)
+ - [Site de Exploração da API do GitHub](https://rovanni.github.io/GitHub-Public-Repositories-Explorer/)
 
 ## Autor
 
 - [@rovanni](https://www.github.com/rovanni)
+
+
